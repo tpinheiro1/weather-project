@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.main-icon {
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.date {
+  font-size: 17px;
+  margin: 0px;
+}
+
+.temperature {
+  font-size: 30px;
+}
+
+.weather-unit {
+  font-size: 12px;
+  position: relative;
+  top: -12px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+
+.fa-sun {
+  color: #fbe555;
+}
+
+.fa-cloud-sun {
+  color: #7f78d2;
+}
+
+.fa-wind {
+  color: #5f6769;
+}
+
+.weekday {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.maximum {
+  font-weight: bolder;
+}
+
+.weather-app {
+  border: solid 1px #5c94bd;
+  border-radius: 20px;
+  padding: 30px;
+}
