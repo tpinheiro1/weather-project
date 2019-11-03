@@ -1,7 +1,17 @@
 function displayTemperature(response) {
+  let description = document.querySelector("#description");
   let temperature = document.querySelector("#temperature");
+  let wind = document.querySelector("#wind");
+  let humidity = document.querySelector("#humidity");
+
+  humidity.innerHTML = response.data.main.humidity;
+  wind.innerHTML = Math.round(response.data.wind.speed);
   temperature.innerHTML = `${Math.round(response.data.main.temp)}`;
+  description.innerHTML = response.data.weather[0].description;
+
+  console.log(response.data);
 }
+
 function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
