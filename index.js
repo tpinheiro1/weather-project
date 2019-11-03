@@ -62,6 +62,12 @@ let days = [
   "Saturday"
 ];
 let hours = currentTime.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let minutes = currentTime.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let day = days[currentTime.getDay()];
 dateContainer.innerHTML = `${day} ${hours}:${minutes}`;
