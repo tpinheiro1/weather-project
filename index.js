@@ -3,13 +3,17 @@ function displayTemperature(response) {
   let temperature = document.querySelector("#temperature");
   let wind = document.querySelector("#wind");
   let humidity = document.querySelector("#humidity");
+  let icon = document.querySelector("#main-icon");
 
-  humidity.innerHTML = response.data.main.humidity;
-  wind.innerHTML = Math.round(response.data.wind.speed);
-  temperature.innerHTML = `${Math.round(response.data.main.temp)}`;
   description.innerHTML = response.data.weather[0].description;
-
-  console.log(response.data);
+  temperature.innerHTML = `${Math.round(response.data.main.temp)}`;
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  humidity.innerHTML = response.data.main.humidity;
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].icon);
 }
 
 function search(event) {
