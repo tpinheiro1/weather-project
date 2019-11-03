@@ -13,19 +13,15 @@ li {
   padding: 0;
 }
 
-h1 {
-  font-size: 80px;
-  font-weight: 800;
-  margin: 0px;
-  padding-bottom: 10px;
+.weather-title h1 {
   text-transform: capitalize;
+  font-weight: bold;
+  font-size: 50px;
 }
 
-.main-icon {
-  font-size: 70px;
-  font-weight: bold;
-  margin: 0px;
-  padding: 0px;
+.weather-title i {
+  margin-left: 20px;
+  font-size: 50px;
 }
 
 .date {
