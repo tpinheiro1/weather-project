@@ -16,75 +16,91 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="weather-app">
+<div class="container">
+<div class="weather-app">
+    <div class="row">
+        <div class="col-2">
             <h1 id="city">
-                Lisbon
-                <span class="main-icon"><i class="fas fa-sun"></i></span>
-            </h1>
-            <p class="date" id="current-date-time">
-            </p>
+                Lisbon </h1>
+        </div>
+        <div class="col-2" class="main-icon">
+            <i class="fas fa-sun"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <ul>
+                <li class="date" id="current-date-time"></li>
+                <li class="description"></li>
+            </ul>
             <span class="temperature" id="temperature"></span> <span class="weather-unit"><a href="#"
                     id="celsius">ºC</a> | <a href="#" id="fahrenheit">ºF</a></span>
-            <span class=Weekdays>
-                <div class="row">
-                    <div class="col-sm">
-                        <ul>
-                            <li class="weekday">Tuesday</li>
-                            <i class="fas fa-cloud-sun"></i>
-                            <li><span class="maximum">28º</span> 16º</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm">
-                        <ul>
-                            <li class="weekday">Wednesday</li>
-                            <i class="fas fa-wind"></i>
-                            <li><span class="maximum">24º</span> 15º</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm">
-                        <ul>
-                            <li class="weekday">Thursday</li>
-                            <i class="fas fa-sun"></i>
-                            <li><span class="maximum">28º</span> 16º</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm">
-                        <ul>
-                            <li class="weekday">Friday</li>
-                            <i class="fas fa-sun"></i>
-                            <li><span class="maximum">28º</span> 18º</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm">
-                        <ul>
-                            <li class="weekday">Saturday</li>
-                            <i class="fas fa-sun"></i>
-                            <li><span class="maximum">24º</span> 17º</li>
-                        </ul>
-            </span>
+        </div>
+        <div class="col-3">
+            <ul>
+                <li>Precipitation</li>
+                <li>Wind</li>
+            </ul>
+        </div> 
+    </div>
+    <div class=Weekdays>
+        <div class="row">
+            <div class="col-sm">
+                <ul>
+                    <li class="weekday">Tuesday</li>
+                    <i class="fas fa-cloud-sun"></i>
+                    <li><span class="maximum">28º</span> 16º</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul>
+                    <li class="weekday">Wednesday</li>
+                    <i class="fas fa-wind"></i>
+                    <li><span class="maximum">24º</span> 15º</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul>
+                    <li class="weekday">Thursday</li>
+                    <i class="fas fa-sun"></i>
+                    <li><span class="maximum">28º</span> 16º</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul>
+                    <li class="weekday">Friday</li>
+                    <i class="fas fa-sun"></i>
+                    <li><span class="maximum">28º</span> 18º</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul>
+                    <li class="weekday">Saturday</li>
+                    <i class="fas fa-sun"></i>
+                    <li><span class="maximum">24º</span> 17º</li>
+                </ul>
+            </div>
         </div>
     </div>
     <br />
     <div class="row">
         <div class="col-3">
             <form id="search-form">
-                <input type="search" placeholder="Type a city..." autocomplete="off" id="search-input"
-                    class="form-control" />
+            <input type="search" placeholder="Type a city..." autocomplete="off" id="search-input"
+                    class="form-control"/>
         </div>
         <div class="col-3">
             <input type="submit" value="Search"/ type="button" class="btn btn-primary">
             </form>
         </div>
-    </div>
-    </div>
+</div>
+</div>
     <p>
         <small>
         <a href="https://github.com/tpinheiro1/weather-project" target="_blank">
             Open-source code</a>, by Teresa Pinheiro</small>
     </p>
-
-    </div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
