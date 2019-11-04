@@ -57,26 +57,6 @@ li::first-letter {
   cursor: default;
 }
 
-.Weekdays {
-  padding: 15px;
-}
-.fa-sun {
-  color: #fbe555;
-}
-
-.fa-cloud-sun {
-  color: #7f78d2;
-}
-
-.fa-wind {
-  color: #5f6769;
-}
-
-.weekday {
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .maximum {
   font-weight: bolder;
 }
@@ -85,4 +65,11 @@ li::first-letter {
   border: solid 1px #5c94bd;
   border-radius: 20px;
   padding: 30px;
+  margin: 10px;
+  max-width: 600px;
+}
+
+.container small {
+  padding: 30px;
+  margin: 0px;
 }
