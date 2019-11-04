@@ -57,16 +57,12 @@ li::first-letter {
   cursor: default;
 }
 
-.maximum {
-  font-weight: bolder;
-}
-
 .weather-app {
   border: solid 1px #5c94bd;
   border-radius: 20px;
   padding: 30px;
   margin: 10px;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .container small {
